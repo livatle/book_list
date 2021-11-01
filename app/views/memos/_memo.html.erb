@@ -1,0 +1,17 @@
+<div class="memos-index-item index-item" id="<%= memo.id %>">
+  <div class="action-btn">
+    <%= link_to(edit_memo_path(memo), class: "edit-btn", remote: true) do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+    <%= link_to(memo_path(memo), class: "delete-btn", method: :delete, remote: true) do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+  </div>
+  <p><%= memo.title %></p>
+  <div class="book-info">
+    <small><%= memo.name %></small>
+  </div>
+  <div class="book-when">
+    <small class="created_at"><%= memo.created_at.to_s(:datetime_jp) %></small>
+  </div>
+</div>

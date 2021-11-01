@@ -1,0 +1,18 @@
+<div class="posts-index-item index-item" id="<%= post.id %>">
+  <div class="action-btn">
+    <%= link_to(edit_post_path(post), class: "edit-btn", remote: true) do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+    <%= link_to(post_path(post), class: "delete-btn", method: :delete, remote: true) do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+  </div>
+  <p><%= post.content %></p>
+  <div class="book-when">
+    <small class="created_at"><%= post.created_at.to_s(:datetime_jp) %></small>
+  </div>  
+  <div class="book-info">
+    <small><%= post.title %></small>
+    <small><%= post.name %></small>
+  </div>
+</div>

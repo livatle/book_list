@@ -1,0 +1,171 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal*/
+html{
+  scroll-behavior: smooth;
+  font-weight: 200;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #c1ced7;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.title {
+  position: absolute;
+  top: 20%;
+  font-size: 36px;
+  color: #333;
+}
+.add-box {
+  width: 135px;
+  height: 45px;
+  margin-right: 20px;
+  position: absolute;
+  border-radius: 5px;
+  top: 20%;
+  right: 0%;
+  background-color: #29C6A5;
+}
+.add-btn {
+  display: inline-block;
+  width: 100%;
+  line-height: 45px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #FFFFFF;
+}
+.add-btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.add-btn:active {
+  background-color: #00ffc8;
+  border-radius: 5px;
+}
+.add-btn i {
+  margin-right: 20px;
+}
+
+body.full-page {
+  background: #F5F8FA fixed;
+}
+.nav {
+  width: 80%;
+  border-bottom: 1px solid #c1ced7;
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+  }
+  li {
+    width: 100px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    a {
+      color: #c1ced7;
+    }
+  }
+}
+.nav-list li.current {
+  border-bottom: 3px solid #29C6A5;
+}
+.nav-list li.current a {
+  color: #333;
+}
+.index {
+  width: 80%;
+  margin: 10px auto 0;
+  height: auto;
+  max-height: 540px;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+.index-item {
+  position: relative;
+  padding: 30px;
+  border-bottom: 1px solid #c1ced7;
+  background-color: white;
+}
+.book-when {
+  float: right;
+}
+.book-info {
+  float: left;
+}
+
+.add-form {
+  margin: 30px auto;
+}
+.form {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color: #FFFFFF;
+}
+.form-body {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-body input {
+  display: inline-block;
+  width: 100%;
+  padding: 30px 0;
+  margin: 0 auto 30px;
+  border: none;
+  outline: none;
+  :first-child {
+    margin-top: 30px;
+  }
+}
+.form-body input:last-child {
+  background-color: #29C6A5;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.form-body input:last-child:active {
+  background-color: #00ffc8;
+  border-radius: 5px;
+}
+
+
+/* posts/post */
+.action-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+.action-btn i {
+  color: #333;
+}
+.fa-edit:hover{
+  color: #29C6A5;
+}
+.fa-edit:active {
+  color: #0c5e4d;
+}
+.fa-trash:hover {
+  color: #29C6A5;
+}
+.fa-trash:active {
+  color: #0c5e4d;
+}
+.fa-edit {
+  margin-right: 10px;
+}
+
+
+

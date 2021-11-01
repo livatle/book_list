@@ -1,0 +1,12 @@
+<div class="box">
+<!--投稿詳細ページ-->
+  <div class="memos-index index" id="memos-index">
+    <%= render @memos %>
+  </div>
+
+<!-- 新規投稿フォーム --> 
+  <div class="add-form" id="add-form">
+  <%= render 'create', memo: Memo.new, value: 'submit' %>
+  </div>
+</div>
+  

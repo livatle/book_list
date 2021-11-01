@@ -6,21 +6,31 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/27743ad700.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header class="nav">
-      <ul class="header-menus">
+  <body class="full-page">
+    <header>
+      <div class="container">
+        <div class="title">BOOKLIST</div>
+        <!--新規追加ボタン-->
+        <div class="add-box">
+          <a class="add-btn" id="add-btn" href="#add-form"><i class="fas fa-plus"></i>ADD</a>
+        </div>
+      </div>
+    </header>
+    <div class="nav">
+      <ul class="nav-list">
         <li>
-        <%= link_to("名言", "") %>
+          <%= link_to "PHRASE", "/posts" %>
         </li>
         <li>
-        <%= link_to("読みたい本", "") %>
+          <%= link_to "BOOKLIST", "/memos" %>
         </li>
       </ul>
-    </header>
+    </div>
     <%= yield %>
   </body>
 </html>

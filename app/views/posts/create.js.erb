@@ -1,0 +1,6 @@
+document.getElementById('posts-index').insertAdjacentHTML('afterbegin', '<%= j(render @post) %>');
+document.getElementById('post_title').value = '';
+document.getElementById('post_name').value = '';
+document.getElementById('post_content').value = '';
+var new_post = document.getElementById('<%= @post.id %>');
+window.scrollTo(0, new_post);

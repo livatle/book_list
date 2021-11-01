@@ -1,0 +1,9 @@
+// 対応するメッセージを更新
+document.getElementById('<%= @memo.id %>').outerHTML = '<%= j(render @memo) %>';
+
+var new_memo = document.getElementById('<%= @memo.id %>');
+window.scrollTo(0, new_memo);
+
+// フォームを新規投稿フォームに戻す
+var form = document.getElementsByTagName('form')[0];
+form.outerHTML = '<%= j(render 'create', memo: Memo.new, value: 'submit') %>';

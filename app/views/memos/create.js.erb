@@ -1,0 +1,5 @@
+document.getElementById('memos-index').insertAdjacentHTML('afterbegin', '<%= j(render @memo) %>');
+document.getElementById('memo_title').value = '';
+document.getElementById('memo_name').value = '';
+var new_memo = document.getElementById('<%= @memo.id %>');
+window.scrollTo(0, new_memo);

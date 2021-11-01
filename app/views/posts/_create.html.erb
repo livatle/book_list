@@ -1,0 +1,8 @@
+<%= form_with model: post, class: "form", id: "form", local: false do |f| %>
+  <div class="form-body">
+    <%= f.text_field :content, placeholder: "PHRASE" %> 
+    <%= f.text_field :tilte, placeholder: "TITLE" %>
+    <%= f.text_field :name, placeholder: "AUTHOR" %>
+    <%= f.submit value, id: "submit-button"%>
+  </div>
+<% end %>

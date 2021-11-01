@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  get "posts/index" => "posts#index"
+  resources :posts, :memos, except: [:show] do
+    collection do
+      get 'search'
+    end
+  end
 end

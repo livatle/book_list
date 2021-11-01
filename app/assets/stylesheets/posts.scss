@@ -1,0 +1,16 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* posts/index*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.posts-index-item p {
+  font-style: italic;
+}
+.book-when {
+  float: right;
+}
+

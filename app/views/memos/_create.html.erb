@@ -1,0 +1,7 @@
+<%= form_with model: memo, class: "form", id: "form", local: false do |f| %>
+  <div class="form-body" id="edit">
+    <%= f.text_field :title, placeholder: "Title" %>
+    <%= f.text_field :name, placeholder: "Author" %>
+    <%= f.submit value %>
+  </div>
+<% end %>

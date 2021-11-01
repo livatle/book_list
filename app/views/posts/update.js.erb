@@ -1,0 +1,11 @@
+
+// 対応するメッセージを更新
+document.getElementById('<%= @post.id %>').outerHTML = '<%= j(render @post) %>';
+
+//新しい投稿まで移動
+var new_post = document.getElementById('<%= @post.id %>')
+window.scrollTo(0, new_post);
+
+// フォームを新規投稿フォームに戻す
+var form = document.getElementsByTagName('form')[1];
+form.outerHTML = '<%= j(render 'create', post: Post.new, value: 'submit') %>'
